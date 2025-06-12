@@ -1,0 +1,24 @@
+.admin-home{
+    width: 100%;
+}
+.nav{
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+button{
+    height: 50px;
+    width: 70px;
+    border-radius:10px ;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.01);
+}

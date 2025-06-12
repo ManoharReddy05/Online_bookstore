@@ -1,0 +1,121 @@
+.add-book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8ecef, #f8f1e9); /* Soft gray to ivory gradient */
+  padding: 20px;
+}
+
+.add-book-form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle pop-out shadow */
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.6s ease-in-out; /* Fade-in animation */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center form content */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-title {
+  text-align: center;
+  color: #1c2526; /* Black */
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  width: 100%; /* Ensure title spans form width */
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  width: 100%; /* Full width for centering */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center inputs within group */
+}
+
+.form-label {
+  color: #1c2526; /* Black */
+  font-family: 'Helvetica', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  width: 100%; /* Full width for alignment */
+  text-align: left; /* Align label text to left */
+}
+
+.form-input,
+.form-file-input {
+  width: 100%;
+  max-width: 360px; /* Consistent width for all inputs */
+  padding: 0.6rem;
+  border: 1px solid #1c2526; /* Black border */
+  border-radius: 6px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 0.95rem;
+  background: #fff; /* White background for all inputs */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus,
+.form-file-input:focus {
+  outline: none;
+  border-color: #8b7d6b; /* Warm taupe */
+  box-shadow: 0 0 6px rgba(139, 125, 107, 0.3); /* Subtle glow */
+}
+
+.form-file-input::-webkit-file-upload-button {
+  background: #1c2526; /* Black button */
+  color: #f5f5dc; /* Beige text */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.form-file-input::-webkit-file-upload-button:hover {
+  background: #333; /* Slightly lighter black */
+}
+
+.submit-button {
+  width: 100%;
+  max-width: 360px; /* Match input width */
+  padding: 0.8rem;
+  background: linear-gradient(90deg, #1c2526, #333); /* Black to dark gray gradient */
+  color: #f5f5dc; /* Beige text */
+  border: none;
+  border-radius: 6px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.submit-button:hover {
+  transform: scale(1.05); /* Subtle pulse effect */
+  background: #8b7d6b; /* Warm taupe on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}

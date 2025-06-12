@@ -1,0 +1,178 @@
+.book-payment-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8ecef, #f8f1e9); /* Soft gray to ivory gradient */
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  animation: fadeIn 0.6s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.left-panel {
+  flex: 1;
+  min-width: 300px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.book-image {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle pop-out shadow */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-input {
+  width: 100%;
+  max-width: 320px; /* Consistent width */
+  padding: 0.6rem;
+  border: 1px solid #1c2526; /* Black border */
+  border-radius: 6px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 0.95rem;
+  background: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #8b7d6b; /* Warm taupe */
+  box-shadow: 0 0 6px rgba(139, 125, 107, 0.3); /* Subtle glow */
+}
+
+.error-message {
+  color: #8b0000; /* Dark red */
+  font-family: 'Helvetica', sans-serif;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+.submit-button,
+.download-button {
+  width: 100%;
+  max-width: 320px; /* Match input width */
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.submit-button {
+  background: linear-gradient(90deg, #1c2526, #333); /* Black to dark gray gradient */
+  color: #f5f5dc; /* Beige text */
+}
+
+.submit-button:hover {
+  transform: scale(1.05); /* Pulse effect */
+  background: #8b7d6b; /* Warm taupe */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.download-button {
+  background: #8b0000; /* Dark red for download */
+  color: #f5f5dc; /* Beige text */
+}
+
+.download-button:hover {
+  transform: scale(1.05); /* Pulse effect */
+  background: #a30000; /* Lighter red */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.right-panel {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.book-title {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1c2526; /* Black */
+  margin: 0;
+}
+
+.book-author {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1c2526; /* Black */
+  margin: 0;
+}
+
+.book-description {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1rem;
+  color: #1c2526; /* Black */
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+.book-price {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1c2526; /* Black */
+  margin: 0;
+}
+
+.loading-message,
+.error-message {
+  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.2rem;
+  color: #1c2526; /* Black */
+  margin-top: 2rem;
+}
+
+.error-message {
+  color: #8b0000; /* Dark red for errors */
+}
